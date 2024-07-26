@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Pulse</title>
+  <link rel="apple-touch-icon" href="C:\Users\Nontuthuzelo Ngwenya\Dropbox\PC\Desktop\E-Pulse_Mobile-App\E-Pulse\icons\E-Pulse__\E-Pulse=_Logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>E-Pulse</h1>
+      <h2 id="time"></h2>
+      <p id="date"></p>
+    </header>
+    <main>
+      <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to E-Pulse</p>
+      </section>
+      <section id="calendar">
+        <h2>Calendar</h2>
+        <div id="calendar-content">
+          <div class="calendar-item">
+            <span class="calendar-date">Feb 21</span>
+            <span class="calendar-event">Breakfast Meeting</span>
+          </div>
+          <div class="calendar-item">
+            <span class="calendar-date">Feb 22</span>
+            <span class="calendar-event">Zoom Presentation</span>
+          </div>
+          <!--Can still add more calendar content-->
+        </div>
+      </section>
+      <section id="wallpaper">
+        <h2>Wallpaper</h2>
+        <div id="wallpaper-content">
+          <!-- Wallpaper content goes in here -->
+        </div>
+      </section>
+      <section id="reminders">
+        <!-- Reminders will be dynamically added here -->
+      </section>
+      <form id="reminder-form">
+        <label for="reminder-time">Time:</label>
+        <input type="time" id="reminder-time" required>
+        <label for="reminder-text">Reminder:</label>
+        <input type="text" id="reminder-text" placeholder="Enter reminder" required>
+        <button type="submit">Add Reminder</button>
+      </form>
+    </main>
+  </div>
+  <footer>
+    <p>&copy; 2024 E-Pulse. All rights reserved.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
